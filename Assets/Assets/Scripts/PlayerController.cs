@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
             moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             Vector3 moveHorizontal = transform.up * moveInput.y;
             Vector3 moveVertical = transform.right * moveInput.x;
-            theRB.velocity = (moveHorizontal + moveVertical) * moveSpeed * Time.deltaTime;
+            theRB.velocity = (moveHorizontal + moveVertical) * moveSpeed;// * Time.deltaTime; doesn't work on some PC's, idk why
             anim.SetFloat("MoveX",Input.GetAxis("Horizontal"));
             apocalypseTimer = Time.timeSinceLevelLoad * 100;
             if (catFound == true)
