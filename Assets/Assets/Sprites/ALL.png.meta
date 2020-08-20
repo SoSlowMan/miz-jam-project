@@ -418,7 +418,7 @@ TextureImporter:
     second: colored_transparent_packed_137
   - first:
       213: -7723301757156686645
-    second: colored_transparent_packed_138
+    second: 1crown
   - first:
       213: -5481597023960408221
     second: colored_transparent_packed_139
@@ -6213,7 +6213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_packed_138
+      name: 1crown
       rect:
         serializedVersion: 2
         x: 688

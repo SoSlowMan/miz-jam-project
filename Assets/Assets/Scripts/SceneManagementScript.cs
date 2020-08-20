@@ -26,7 +26,7 @@ public class SceneManagementScript : MonoBehaviour
 
     public void StartTheGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("StartCutScene");
     }
 
     public void ExitTheGame()
