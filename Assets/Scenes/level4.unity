@@ -4635,6 +4635,7 @@ MonoBehaviour:
   timer: {fileID: 2094917501}
   deathClock: 3000
   apocalypseTimer: 0
+  apocalypseTimer100: 0
   startTime: 0
   currentLevel: 
   nextLevel: 
@@ -5362,7 +5363,7 @@ Animator:
   m_GameObject: {fileID: 1541558010}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 905a3fb587264b948a7f5c79c67968f9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 809243ddee8cb0b419d3cc2d8544e793, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
