@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
                 nextLevel = "level5";
                 break;
             case "level5":
-                nextLevel = "MainMenu";
+                nextLevel = "EndingScreen";
                 break;
         }
      }
@@ -97,6 +97,24 @@ public class PlayerController : MonoBehaviour
                 if (catFound == true)
                 {
                     //make switches
+                    switch (currentLevel)
+                    {
+                        case "SampleScene":
+                            PlayerPrefs.SetFloat("saveLevel1", apocalypseTimer);
+                            break;
+                        case "level2":
+                            PlayerPrefs.SetFloat("saveLevel2", apocalypseTimer);
+                            break;
+                        case "level3":
+                            PlayerPrefs.SetFloat("saveLevel3", apocalypseTimer);
+                            break;
+                        case "level4":
+                            PlayerPrefs.SetFloat("saveLevel4", apocalypseTimer);
+                            break;
+                        case "level5":
+                            PlayerPrefs.SetFloat("saveLevel5", apocalypseTimer);
+                            break;
+                    }
                     startScreen.SetActive(false);
                     winScreen.SetActive(true);
                     apocalypseTimer100 = -999999;
