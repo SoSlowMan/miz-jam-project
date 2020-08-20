@@ -20,27 +20,30 @@ public class TimerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        minutes = (int)((PlayerController.instance.deathClock) / 6000f - (Time.timeSinceLevelLoad / 60f));
-        currentLevel = SceneManager.GetActiveScene().name;
-        switch (currentLevel)
+        if (PlayerController.instance.isLevelStarted == true)
         {
-            case "SampleScene":
-                seconds = (int)(15 - (Time.timeSinceLevelLoad % 60f));
-                break;
-            case "level2":
-                seconds = (int)(15 - (Time.timeSinceLevelLoad % 60f));
-                break;
-            case "level3":
-                seconds = (int)(15 - (Time.timeSinceLevelLoad % 60f));
-                break;
-            case "level4":
-                seconds = (int)(30 - (Time.timeSinceLevelLoad % 60f));
-                break;
-            case "level5":
-                seconds = (int)(30 - (Time.timeSinceLevelLoad % 60f));
-                break;
+            minutes = (int)((PlayerController.instance.deathClock) / 6000f - (PlayerController.instance.apocalypseTimer / 60f));
+            currentLevel = SceneManager.GetActiveScene().name;
+            switch (currentLevel)
+            {
+                case "SampleScene":
+                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+                case "level2":
+                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+                case "level3":
+                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+                case "level4":
+                    seconds = (int)(30 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+                case "level5":
+                    seconds = (int)(30 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+            }
+            miliseconds = (int)(100 - (((PlayerController.instance.apocalypseTimer % 60f) * 100) % 100));
+            counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + miliseconds.ToString("00");
         }
-        miliseconds = (int)(100 - (((Time.timeSinceLevelLoad % 60f) * 100) % 100));
-        counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + miliseconds.ToString("00");
     }
 }

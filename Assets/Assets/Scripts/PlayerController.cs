@@ -20,12 +20,17 @@ public class PlayerController : MonoBehaviour
     public GameObject deadScreen;
     public GameObject winScreen;
     public GameObject startScreen;
+    public GameObject pressSpace;
+    public GameObject timer;
 
     public float deathClock;
     public float apocalypseTimer;
+    public float apocalypseTimer100;
+    public float startTime;
 
     public string currentLevel;
     public string nextLevel;
+    public bool isLevelStarted;
 
     //public GameObject roomCamera;
 
@@ -42,6 +47,7 @@ public class PlayerController : MonoBehaviour
         hasDied = false;
         anim = GetComponent<Animator>();
         currentLevel = SceneManager.GetActiveScene().name;
+        isLevelStarted = false;
         switch (currentLevel)
         {
             case "SampleScene":
@@ -67,28 +73,43 @@ public class PlayerController : MonoBehaviour
     {
         if (hasDied == false)
         {
-            moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            Vector3 moveHorizontal = transform.up * moveInput.y;
-            Vector3 moveVertical = transform.right * moveInput.x;
-            theRB.velocity = (moveHorizontal + moveVertical) * moveSpeed;// * Time.deltaTime; doesn't work on some PC's, idk why
-            anim.SetFloat("MoveX",Input.GetAxis("Horizontal"));
-            apocalypseTimer = Time.timeSinceLevelLoad * 100;
-            if (catFound == true)
+            if (isLevelStarted == false)
             {
-                //make switches
-                startScreen.SetActive(false);
-                winScreen.SetActive(true);
-                apocalypseTimer = -999999;
-                if (Input.GetKeyDown(KeyCode.Space))
+                pressSpace.SetActive(true);
+                timer.SetActive(false);
+                if(Input.GetKeyDown(KeyCode.Space))
                 {
-                    SceneManager.LoadScene(nextLevel);
+                    isLevelStarted = true;
+                    startTime = Time.timeSinceLevelLoad;
+                    pressSpace.SetActive(false);
+                    timer.SetActive(true);
+                }             
+            }
+            else
+            {
+                moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+                Vector3 moveHorizontal = transform.up * moveInput.y;
+                Vector3 moveVertical = transform.right * moveInput.x;
+                theRB.velocity = (moveHorizontal + moveVertical) * moveSpeed;// * Time.deltaTime; doesn't work on some PC's, idk why
+                anim.SetFloat("MoveX", Input.GetAxis("Horizontal"));
+                apocalypseTimer = (Time.timeSinceLevelLoad - startTime);// * 100;
+                apocalypseTimer100 = apocalypseTimer * 100;
+                if (catFound == true)
+                {
+                    //make switches
+                    startScreen.SetActive(false);
+                    winScreen.SetActive(true);
+                    apocalypseTimer100 = -999999;
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        SceneManager.LoadScene(nextLevel);
+                    }
+                }
+                if (apocalypseTimer100 > deathClock)
+                {
+                    hasDied = true;
                 }
             }
-            if (apocalypseTimer > deathClock)
-            {
-                hasDied = true;
-            }
-
         }
         else
         {
