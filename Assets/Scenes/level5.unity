@@ -3996,7 +3996,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Oh no.
 --- !u!222 &594910814
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12713,7 +12713,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ALRIGHT, I GIVE UP! YOU'RE GOOD, CAT SAVER
+  m_Text: Wait, what's happening?
 --- !u!222 &1932831566
 CanvasRenderer:
   m_ObjectHideFlags: 0

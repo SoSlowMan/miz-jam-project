@@ -1351,7 +1351,7 @@ TextureImporter:
     second: colored_transparent_packed_448
   - first:
       213: -251696663217473899
-    second: colored_transparent_packed_449
+    second: 1boss2
   - first:
       213: 1183451493755300995
     second: 1boss
@@ -12744,7 +12744,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_packed_449
+      name: 1boss2
       rect:
         serializedVersion: 2
         x: 288

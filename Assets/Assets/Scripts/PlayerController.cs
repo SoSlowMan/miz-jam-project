@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
                 nextLevel = "level5";
                 break;
             case "level5":
-                nextLevel = "EndingScreen";
+                nextLevel = "EndCutScene";
                 break;
         }
      }

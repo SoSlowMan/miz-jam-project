@@ -3032,8 +3032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -147.44, y: 63.79}
-  m_SizeDelta: {x: 252.12, y: 47.94}
+  m_AnchoredPosition: {x: -171.54, y: 72.245}
+  m_SizeDelta: {x: 300.32, y: 64.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584902034
 MonoBehaviour:
@@ -3068,7 +3068,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Alright, I'll give you a chance
+  m_Text: Hehe, welcome to your doom! I'm bored, so you will entertain me by opening
+    chests, looking for stupid cats for all eternity!
 --- !u!222 &584902035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9402,6 +9403,7 @@ RectTransform:
   - {fileID: 594910812}
   - {fileID: 1932831564}
   - {fileID: 808186745}
+  - {fileID: 1916965242}
   m_Father: {fileID: 1729561097}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9587,6 +9589,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1916965241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916965242}
+  - component: {fileID: 1916965244}
+  - component: {fileID: 1916965243}
+  m_Layer: 5
+  m_Name: dialogue3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1916965242
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916965241}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1851283399}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 324, y: -184}
+  m_SizeDelta: {x: 252.12, y: 21.16}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1916965243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916965241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ba962151d315dfb4eaefb096520881a8, type: 3}
+    m_FontSize: 4
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 31
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: psst, save a few more of my fellow cats and our king, and we'll help you
+    get out of here! vive la REVOLUTION!
+--- !u!222 &1916965244
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916965241}
+  m_CullTransparentMesh: 0
 --- !u!1 &1932831563
 GameObject:
   m_ObjectHideFlags: 0
@@ -9720,8 +9802,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9816,7 +9897,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Only 3 chests, even someone like you can find the cat here
+  m_Text: Let's start simple. Only 3 chests, even someone like you can find the cat
+    here.
 --- !u!222 &2009460518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9879,8 +9961,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10267,6 +10348,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6107454740495120178, guid: 9440e5e0bda62374badcf4977dad5b8a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9440e5e0bda62374badcf4977dad5b8a, type: 3}
 --- !u!1001 &8225298075150901631

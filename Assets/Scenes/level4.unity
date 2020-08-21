@@ -3596,8 +3596,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4190,8 +4189,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5141,8 +5139,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10916,8 +10913,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11233,6 +11229,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6107454740495120178, guid: 9440e5e0bda62374badcf4977dad5b8a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945,
+        type: 3}
     - target: {fileID: 6107454740547940424, guid: 9440e5e0bda62374badcf4977dad5b8a,
         type: 3}
       propertyPath: m_Sprite
@@ -11542,8 +11544,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11622,8 +11623,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11702,8 +11702,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12020,8 +12019,7 @@ SpriteRenderer:
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7966352483322198169, guid: 2b599a004fc875c409dec64a77786e2b,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12113,6 +12111,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6107454740495120178, guid: 9440e5e0bda62374badcf4977dad5b8a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945,
+        type: 3}
     - target: {fileID: 6107454740547940424, guid: 9440e5e0bda62374badcf4977dad5b8a,
         type: 3}
       propertyPath: m_Sprite
@@ -12360,6 +12364,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6107454740495120178, guid: 9440e5e0bda62374badcf4977dad5b8a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945,
+        type: 3}
     - target: {fileID: 6107454740547940424, guid: 9440e5e0bda62374badcf4977dad5b8a,
         type: 3}
       propertyPath: m_Sprite
@@ -12634,6 +12644,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6107454740495120178, guid: 9440e5e0bda62374badcf4977dad5b8a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cb285bbcdefc6b4aa19bf4dff37c945,
+        type: 3}
     - target: {fileID: 6107454740547940424, guid: 9440e5e0bda62374badcf4977dad5b8a,
         type: 3}
       propertyPath: m_Sprite
