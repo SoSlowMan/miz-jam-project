@@ -11,6 +11,7 @@ public class EndingScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioController.instance.PlayWinSound();
         bestTime = PlayerPrefs.GetFloat("saveLevel1") + PlayerPrefs.GetFloat("saveLevel2") + PlayerPrefs.GetFloat("saveLevel3") + PlayerPrefs.GetFloat("saveLevel4") + PlayerPrefs.GetFloat("saveLevel5");
     }
 

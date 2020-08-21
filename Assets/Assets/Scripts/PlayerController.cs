@@ -25,16 +25,15 @@ public class PlayerController : MonoBehaviour
 
     public float deathClock;
     public float apocalypseTimer;
-    public float apocalypseTimer100;
     public float startTime;
 
     public string currentLevel;
     public string nextLevel;
     public bool isLevelStarted;
 
-    //public GameObject roomCamera;
-
     private Animator anim;
+
+    public float mistakes;
 
     private void Awake()
     {
@@ -44,6 +43,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioController.instance.PlayLevelMusic();
         hasDied = false;
         anim = GetComponent<Animator>();
         currentLevel = SceneManager.GetActiveScene().name;
@@ -92,8 +92,7 @@ public class PlayerController : MonoBehaviour
                 Vector3 moveVertical = transform.right * moveInput.x;
                 theRB.velocity = (moveHorizontal + moveVertical) * moveSpeed;// * Time.deltaTime; doesn't work on some PC's, idk why
                 anim.SetFloat("MoveX", Input.GetAxis("Horizontal"));
-                apocalypseTimer = (Time.timeSinceLevelLoad - startTime);// * 100;
-                apocalypseTimer100 = apocalypseTimer * 100;
+                apocalypseTimer = (Time.timeSinceLevelLoad - startTime) + mistakes * 3;
                 if (catFound == true)
                 {
                     //make switches
@@ -117,15 +116,19 @@ public class PlayerController : MonoBehaviour
                     }
                     startScreen.SetActive(false);
                     winScreen.SetActive(true);
-                    apocalypseTimer100 = -999999;
+                    apocalypseTimer = -999999;
+                    AudioController.instance.levelMusic.Stop();
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         SceneManager.LoadScene(nextLevel);
                     }
                 }
-                if (apocalypseTimer100 > deathClock)
+                if (apocalypseTimer > deathClock)
                 {
                     hasDied = true;
+                    apocalypseTimer = -999999;
+                    AudioController.instance.levelMusic.Stop();
+                    AudioController.instance.PlayLoseSound();
                 }
             }
         }

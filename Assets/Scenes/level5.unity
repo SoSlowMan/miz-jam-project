@@ -3259,6 +3259,7 @@ MonoBehaviour:
   catPic: {fileID: 1976154032}
   catChest: 1
   randomPic: {fileID: 1440969743}
+  errorSound: {fileID: 0}
 --- !u!4 &332077923
 Transform:
   m_ObjectHideFlags: 0
@@ -3391,6 +3392,7 @@ MonoBehaviour:
   catPic: {fileID: 1394596958}
   catChest: 0
   randomPic: {fileID: 1255430250}
+  errorSound: {fileID: 0}
 --- !u!61 &366589723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3513,6 +3515,75 @@ Transform:
   m_Father: {fileID: 1204967468}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &432033918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5750594130220208569, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750594130220208570, guid: a6577ac25e3e5e24ba3f6ba1285d7671,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6577ac25e3e5e24ba3f6ba1285d7671, type: 3}
 --- !u!1 &447123156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,6 +3702,7 @@ MonoBehaviour:
   catPic: {fileID: 1844483206}
   catChest: 0
   randomPic: {fileID: 97167480}
+  errorSound: {fileID: 0}
 --- !u!61 &502899095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4466,6 +4538,7 @@ MonoBehaviour:
   catPic: {fileID: 671369826}
   catChest: 1
   randomPic: {fileID: 778489311}
+  errorSound: {fileID: 0}
 --- !u!61 &834045852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5152,6 +5225,7 @@ MonoBehaviour:
   catPic: {fileID: 1046100666}
   catChest: 1
   randomPic: {fileID: 1812027621}
+  errorSound: {fileID: 0}
 --- !u!61 &1204967467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5463,7 +5537,9 @@ MonoBehaviour:
   startScreen: {fileID: 1523712724}
   pressSpace: {fileID: 921172706}
   timer: {fileID: 2094917501}
-  deathClock: 3000
+  winSound: {fileID: 0}
+  errorSound: {fileID: 0}
+  deathClock: 30
   apocalypseTimer: 0
   startTime: 0
   currentLevel: 
@@ -5624,6 +5700,7 @@ MonoBehaviour:
   catPic: {fileID: 1427586434}
   catChest: 1
   randomPic: {fileID: 1954700720}
+  errorSound: {fileID: 0}
 --- !u!61 &1310972459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5782,6 +5859,7 @@ MonoBehaviour:
   catPic: {fileID: 1963265076}
   catChest: 1
   randomPic: {fileID: 1578537216}
+  errorSound: {fileID: 0}
 --- !u!61 &1320463875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5940,6 +6018,7 @@ MonoBehaviour:
   catPic: {fileID: 897693558}
   catChest: 1
   randomPic: {fileID: 1977142145}
+  errorSound: {fileID: 0}
 --- !u!61 &1390642215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12350,6 +12429,7 @@ MonoBehaviour:
   catPic: {fileID: 2040566890}
   catChest: 0
   randomPic: {fileID: 1588848176}
+  errorSound: {fileID: 0}
 --- !u!61 &1908766534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12429,6 +12509,7 @@ MonoBehaviour:
   catPic: {fileID: 1948106733}
   catChest: 0
   randomPic: {fileID: 1695924330}
+  errorSound: {fileID: 0}
 --- !u!61 &1922096378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12508,6 +12589,7 @@ MonoBehaviour:
   catPic: {fileID: 2091575358}
   catChest: 0
   randomPic: {fileID: 269499562}
+  errorSound: {fileID: 0}
 --- !u!61 &1930895526
 BoxCollider2D:
   m_ObjectHideFlags: 0

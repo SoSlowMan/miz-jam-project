@@ -9,6 +9,12 @@ public class MainMenuScript : MonoBehaviour
     void Start()
     {
         howToPlay.SetActive(false);
+        AudioController.instance.PlayMainMenuMusic();
+        PlayerPrefs.DeleteKey("saveLevel1");
+        PlayerPrefs.DeleteKey("saveLevel2");
+        PlayerPrefs.DeleteKey("saveLevel3");
+        PlayerPrefs.DeleteKey("saveLevel4");
+        PlayerPrefs.DeleteKey("saveLevel5");
     }
 
     // Update is called once per frame
