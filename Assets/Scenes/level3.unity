@@ -2996,6 +2996,7 @@ MonoBehaviour:
   catChest: 1
   randomPic: {fileID: 1440969743}
   errorSound: {fileID: 0}
+  isOpened: 0
 --- !u!4 &332077923
 Transform:
   m_ObjectHideFlags: 0
@@ -3342,6 +3343,7 @@ MonoBehaviour:
   catChest: 0
   randomPic: {fileID: 97167480}
   errorSound: {fileID: 0}
+  isOpened: 0
 --- !u!61 &502899095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4179,6 +4181,7 @@ MonoBehaviour:
   catChest: 1
   randomPic: {fileID: 778489311}
   errorSound: {fileID: 0}
+  isOpened: 0
 --- !u!61 &834045852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4727,14 +4730,13 @@ MonoBehaviour:
   startScreen: {fileID: 1523712724}
   pressSpace: {fileID: 435082226}
   timer: {fileID: 2094917501}
-  winSound: {fileID: 0}
-  errorSound: {fileID: 0}
-  deathClock: 15
+  deathClock: 10
   apocalypseTimer: 0
   startTime: 0
   currentLevel: 
   nextLevel: 
   isLevelStarted: 0
+  mistakes: 0
 --- !u!50 &1294667245
 Rigidbody2D:
   serializedVersion: 4
@@ -4970,6 +4972,7 @@ MonoBehaviour:
   catChest: 1
   randomPic: {fileID: 1977142145}
   errorSound: {fileID: 0}
+  isOpened: 0
 --- !u!61 &1390642215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10938,6 +10941,7 @@ MonoBehaviour:
   catChest: 0
   randomPic: {fileID: 1588848176}
   errorSound: {fileID: 0}
+  isOpened: 0
 --- !u!61 &1908766534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11018,6 +11022,7 @@ MonoBehaviour:
   catChest: 0
   randomPic: {fileID: 1695924330}
   errorSound: {fileID: 0}
+  isOpened: 0
 --- !u!61 &1922096378
 BoxCollider2D:
   m_ObjectHideFlags: 0

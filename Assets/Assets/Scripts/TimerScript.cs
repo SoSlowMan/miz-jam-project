@@ -27,19 +27,19 @@ public class TimerScript : MonoBehaviour
             switch (currentLevel)
             {
                 case "SampleScene":
-                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
+                    seconds = (int)(10 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
                 case "level2":
-                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
+                    seconds = (int)(10 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
                 case "level3":
-                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
+                    seconds = (int)(10 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
                 case "level4":
-                    seconds = (int)(30 - (PlayerController.instance.apocalypseTimer % 60f));
+                    seconds = (int)(20 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
                 case "level5":
-                    seconds = (int)(30 - (PlayerController.instance.apocalypseTimer % 60f));
+                    seconds = (int)(20 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
             }
             miliseconds = (int)(100 - (((PlayerController.instance.apocalypseTimer % 60f) * 100) % 100));
