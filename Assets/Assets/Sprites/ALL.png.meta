@@ -289,13 +289,13 @@ TextureImporter:
     second: colored_transparent_packed_94
   - first:
       213: 3590707818725834703
-    second: colored_transparent_packed_95
+    second: 1grass
   - first:
       213: -5568311989980051214
-    second: colored_transparent_packed_96
+    second: 1bush
   - first:
       213: 2703109476868214566
-    second: colored_transparent_packed_97
+    second: 1bob
   - first:
       213: 7909808892631399231
     second: 1doublePineTree
@@ -5310,7 +5310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_packed_95
+      name: 1grass
       rect:
         serializedVersion: 2
         x: 0
@@ -5331,7 +5331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_packed_96
+      name: 1bush
       rect:
         serializedVersion: 2
         x: 16
@@ -5352,7 +5352,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_packed_97
+      name: 1bob
       rect:
         serializedVersion: 2
         x: 32

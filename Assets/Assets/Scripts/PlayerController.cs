@@ -57,12 +57,21 @@ public class PlayerController : MonoBehaviour
                 nextLevel = "level3";
                 break;
             case "level3":
+                nextLevel = "level3_1";
+                break;
+            case "level3_1":
                 nextLevel = "level4";
                 break;
             case "level4":
+                nextLevel = "level4_1";
+                break;
+            case "level4_1":
                 nextLevel = "level5";
                 break;
             case "level5":
+                nextLevel = "level5_1";
+                break;
+            case "level5_1":
                 nextLevel = "EndCutScene";
                 break;
         }
@@ -112,6 +121,15 @@ public class PlayerController : MonoBehaviour
                             break;
                         case "level5":
                             PlayerPrefs.SetFloat("saveLevel5", apocalypseTimer);
+                            break;
+                        case "level3_1":
+                            PlayerPrefs.SetFloat("saveLevel3_1", apocalypseTimer);
+                            break;
+                        case "level4_1":
+                            PlayerPrefs.SetFloat("saveLevel4_1", apocalypseTimer);
+                            break;
+                        case "level5_1":
+                            PlayerPrefs.SetFloat("saveLevel5_1", apocalypseTimer);
                             break;
                     }
                     startScreen.SetActive(false);

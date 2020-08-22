@@ -3525,8 +3525,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -161, y: 76}
-  m_SizeDelta: {x: 252.1, y: 73}
+  m_AnchoredPosition: {x: -161, y: 85.048}
+  m_SizeDelta: {x: 252.1, y: 54.905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584902034
 MonoBehaviour:
@@ -3561,8 +3561,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Alright, let's forget your embarrassing attempts to save everyone and get
-    to the point where you LOSE and LEAVE.
+  m_Text: 'Now the situation is more extreme, you''re in the middle of the woods '
 --- !u!222 &584902035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3641,7 +3640,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Let's see how your little staff will help you next time!
+  m_Text: I need a new tactic...
 --- !u!222 &594910814
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4300,7 +4299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Go back to menu '
+  m_Text: ' Try again '
 --- !u!222 &880436431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4734,7 +4733,7 @@ MonoBehaviour:
   startScreen: {fileID: 1523712724}
   pressSpace: {fileID: 435082226}
   timer: {fileID: 2094917501}
-  deathClock: 10
+  deathClock: 15
   apocalypseTimer: 0
   startTime: 0
   currentLevel: 
@@ -5149,6 +5148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1541558011}
   - component: {fileID: 1541558012}
+  - component: {fileID: 1541558013}
   m_Layer: 0
   m_Name: bossSpear (1)
   m_TagString: Untagged
@@ -5218,6 +5218,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1541558013
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541558010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57575a8cde465214eb58c09c9bef7ce7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1588848176
 GameObject:
   m_ObjectHideFlags: 0
@@ -11139,7 +11158,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oh, now I get it...
+  m_Text: No way, I can't believe this!
 --- !u!222 &1932831566
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11456,7 +11475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (I think I start to understand his secret chest opening technique)
+  m_Text: Some chests are hidden between trees, hehe
 --- !u!222 &2009460518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12169,7 +12188,7 @@ PrefabInstance:
     - target: {fileID: 7179861868953952522, guid: b27654ef8268d30418841a72c975557c,
         type: 3}
       propertyPath: m_Text
-      value: Level 3
+      value: Level 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b27654ef8268d30418841a72c975557c, type: 3}

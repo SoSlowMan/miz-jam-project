@@ -3227,7 +3227,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: If you're so smart, then go ahead, find a cat in 6 chests!
+  m_Text: If you're so cool, then go ahead, find a cat in 6 chests!
 --- !u!222 &584902035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3886,7 +3886,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Go back to menu '
+  m_Text: ' Try again '
 --- !u!222 &880436431
 CanvasRenderer:
   m_ObjectHideFlags: 0

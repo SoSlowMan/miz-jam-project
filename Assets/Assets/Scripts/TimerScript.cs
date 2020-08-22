@@ -33,13 +33,22 @@ public class TimerScript : MonoBehaviour
                     seconds = (int)(10 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
                 case "level3":
-                    seconds = (int)(10 - (PlayerController.instance.apocalypseTimer % 60f));
+                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
                 case "level4":
                     seconds = (int)(20 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
                 case "level5":
+                    seconds = (int)(25 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+                case "level3_1":
+                    seconds = (int)(15 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+                case "level4_1":
                     seconds = (int)(20 - (PlayerController.instance.apocalypseTimer % 60f));
+                    break;
+                case "level5_1":
+                    seconds = (int)(25 - (PlayerController.instance.apocalypseTimer % 60f));
                     break;
             }
             miliseconds = (int)(100 - (((PlayerController.instance.apocalypseTimer % 60f) * 100) % 100));

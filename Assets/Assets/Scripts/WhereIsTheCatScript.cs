@@ -38,10 +38,19 @@ public class WhereIsTheCatScript : MonoBehaviour
             case "level3":
                 staff.color = Color.yellow * (1 - distanceColor);
                 break;
+            case "level3_1":
+                staff.color = Color.yellow * (1 - distanceColor);
+                break;
             case "level4":
                 staff.color = Color.green * (1 - distanceColor);
                 break;
+            case "level4_1":
+                staff.color = Color.green * (1 - distanceColor);
+                break;
             case "level5":
+                staff.color = Color.green * (1 - distanceColor);
+                break;
+            case "level5_1":
                 staff.color = Color.green * (1 - distanceColor);
                 break;
         }

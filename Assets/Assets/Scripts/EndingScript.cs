@@ -12,7 +12,7 @@ public class EndingScript : MonoBehaviour
     void Start()
     {
         AudioController.instance.PlayWinSound();
-        bestTime = PlayerPrefs.GetFloat("saveLevel1") + PlayerPrefs.GetFloat("saveLevel2") + PlayerPrefs.GetFloat("saveLevel3") + PlayerPrefs.GetFloat("saveLevel4") + PlayerPrefs.GetFloat("saveLevel5");
+        bestTime = PlayerPrefs.GetFloat("saveLevel1") + PlayerPrefs.GetFloat("saveLevel2") + PlayerPrefs.GetFloat("saveLevel3") + PlayerPrefs.GetFloat("saveLevel4") + PlayerPrefs.GetFloat("saveLevel5") + PlayerPrefs.GetFloat("saveLevel5_1") + PlayerPrefs.GetFloat("saveLevel4_1") + PlayerPrefs.GetFloat("saveLevel3_1");
     }
 
     // Update is called once per frame

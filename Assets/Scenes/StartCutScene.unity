@@ -211,7 +211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &131134468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9846,7 +9846,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Maybe that's my "arch nemesis", Chestmaster. I've beated him countless times
+  m_Text: Maybe that's my "arch nemesis", Chestmaster. I've beaten him countless times
     already, but he just won't stop bothering me.
 --- !u!222 &1750099046
 CanvasRenderer:
