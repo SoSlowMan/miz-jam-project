@@ -211,7 +211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &131134468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8249,7 +8249,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thank meow you're here! My name is Leonid The Great and I am the ruler of
+  m_Text: Thank Meow you're here! My name is Leonid The Great and I am the ruler of
     planet Catopia.
 --- !u!222 &650280210
 CanvasRenderer:
@@ -8409,8 +8409,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This green menace is creating chaos here, screaming something like "I will
-    win this time! And no one can stop me!"
+  m_Text: This green menace is creating chaos here, can you help us?
 --- !u!222 &841292053
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9233,7 +9232,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1139994907
   m_SortingLayer: 2
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: ba60f0fbd888baf489b9fe263a3ce48e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
