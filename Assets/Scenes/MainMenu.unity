@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   howToPlay: {fileID: 1256493399}
+  settings: {fileID: 0}
 --- !u!114 &235576437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,6 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   howToPlay: {fileID: 1256493399}
+  settings: {fileID: 0}
 --- !u!114 &646542869
 MonoBehaviour:
   m_ObjectHideFlags: 0

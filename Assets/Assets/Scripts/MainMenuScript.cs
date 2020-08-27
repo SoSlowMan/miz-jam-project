@@ -5,6 +5,7 @@ using UnityEngine;
 public class MainMenuScript : MonoBehaviour
 {
     public GameObject howToPlay;
+    public GameObject settings;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +31,15 @@ public class MainMenuScript : MonoBehaviour
     public void closeHelp()
     {
         howToPlay.SetActive(false);
+    }
+
+    public void openSettings()
+    {
+        settings.SetActive(true);
+    }
+
+    public void closeSettings()
+    {
+        settings.SetActive(false);
     }
 }
